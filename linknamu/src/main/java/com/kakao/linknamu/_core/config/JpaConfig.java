@@ -17,7 +17,7 @@ import java.util.Optional;
 public class JpaConfig {
 
     /**
-     * 해당 코드는 @createdBy를 사용할 때 필요합니다.
+     * 해당 코드는 @createdBy, @LastModifiedBy를 사용할 때 필요합니다.
      * 현재는 필요하지 않습니다.
      */
     @Bean

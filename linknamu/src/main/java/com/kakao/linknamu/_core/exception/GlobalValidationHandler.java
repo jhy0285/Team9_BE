@@ -17,7 +17,7 @@
 //
 //    @Before("postMapping()")
 //    public void validationAdvice(JoinPoint jp) {
-//
+//        System.out.println("스고이네");
 //        Object[] args = jp.getArgs();
 //
 //        for (Object arg : args) {
@@ -25,12 +25,12 @@
 //                Errors errors = (Errors) arg;
 //
 //
-//                if (errors.hasErrors()) {
-//
-//                    String errorMessage = errors.getAllErrors().get(0).getDefaultMessage();
-//                    System.out.println(errorMessage);
+////                if (errors.hasErrors()) {
+////
+////                    String errorMessage = errors.getAllErrors().get(0).getDefaultMessage();
+////                    System.out.println(errorMessage);
 ////                    throw new Exception400(DtoExceptionStatus.INVALID_DTO_EXCEPTION);
-//                }
+////                }
 //            }
 //        }
 //    }
