@@ -8,20 +8,21 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.validation.ObjectError;
 import org.springframework.web.bind.MethodArgumentNotValidException;
+import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
-import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.method.annotation.MethodArgumentTypeMismatchException;
 import org.springframework.web.multipart.support.MissingServletRequestPartException;
 
 import java.util.List;
 
-@RestControllerAdvice
+@ControllerAdvice
 @RequiredArgsConstructor
 @Slf4j
 public class GlobalExceptionHandler {
 
     @ExceptionHandler({MethodArgumentNotValidException.class})
     public ResponseEntity<?> dtoValidationException(MethodArgumentNotValidException e) {
+
         List<ObjectError> errors = e.getBindingResult().getAllErrors();
         return new ResponseEntity<>(ApiUtils.error(errors.get(0).getDefaultMessage(), HttpStatus.BAD_REQUEST.value()), HttpStatus.BAD_REQUEST);
     }
@@ -47,7 +48,7 @@ public class GlobalExceptionHandler {
         return new ResponseEntity<>(e.body(), e.status());
     }
 
-    @ExceptionHandler({Exception500.class})
+    @ExceptionHandler({Exception500.class, Exception502.class})
     public ResponseEntity<?> serverException(ServerException e) {
         //logging 추가해주는 것이 좋아보임
 //        log.error(e.getMessage());

@@ -3,7 +3,7 @@ package com.kakao.linknamu._core.exception;
 import com.kakao.linknamu._core.util.ApiUtils;
 import org.springframework.http.HttpStatus;
 
-public class Exception401 extends ClientException{
+public class Exception401 extends ClientException {
     private final BaseExceptionStatus exceptionStatus;
 
     public Exception401(BaseExceptionStatus exception) {
@@ -12,8 +12,12 @@ public class Exception401 extends ClientException{
     }
 
     @Override
-    public ApiUtils.ApiResult<?> body() {return ApiUtils.error(getMessage(), exceptionStatus.getStatus());}
+    public ApiUtils.ApiResult<?> body() {
+        return ApiUtils.error(getMessage(), exceptionStatus.getStatus());
+    }
 
     @Override
-    public HttpStatus status() { return HttpStatus.UNAUTHORIZED;}
+    public HttpStatus status() {
+        return HttpStatus.valueOf(exceptionStatus.getStatus());
+    }
 }
