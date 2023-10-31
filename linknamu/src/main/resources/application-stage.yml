@@ -61,35 +61,3 @@ oauth2:
     redirect_uri : ${GOOGLE_REDIRECT_URI}
 
 
-###사족(볼필요 없습니다)
-#true로 한다면 기본 보안설정을 yml에서 셋팅할수잇습니다...
-#    security:
-#      basic:
-#        enabled: true
-#
-#      # 사용자 정의 인증 및 권한 부여를 위한 설정
-#      user:
-#        name: user
-#        password: password
-#        roles: USER
-#
-#      # 특정 URL에 대한 접근 제어
-#      filter-chain:
-#        - pattern: /public/**
-#          security: none
-#        - pattern: /admin/**
-#          security: authenticated
-#
-#      # CSRF(Cross-Site Request Forgery) 방어 설정
-#      csrf:
-#        enabled: true
-#
-#      # XSS(Cross-Site Scripting) 방어 설정
-#      headers:
-#        content-security-policy: "default-src 'self'"
-#
-#      # 보안 헤더 설정
-#      headers:
-#        hsts:
-#          max-age-seconds: 31536000
-

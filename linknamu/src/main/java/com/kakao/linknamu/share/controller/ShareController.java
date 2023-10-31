@@ -30,13 +30,12 @@ public class ShareController {
     private final CreateWorkspaceFromLinkService createWorkspaceFromLinkService;
 
     //우선 어떤 액션을 했을떄 url 생성되서 띄워주는 post요청 -> 만들려면 워크스페이스 id랑 유저 정보 필요함
-    @PostMapping("workspace/link")
+    @PostMapping("workspace/create/link")
     public ResponseEntity<?> createWorkSpaceShareURL(@RequestBody @Valid CreateWorkSpaceLinkRequestDto requestDto, Errors errors,
                                                      @AuthenticationPrincipal CustomUserDetails userDetails) {
 
         String link = createWorkspaceLinkService.createLink(requestDto);
         return ResponseEntity.ok(ApiUtils.success(link));
-
 
     }
 
@@ -54,9 +53,9 @@ public class ShareController {
 
 
     @GetMapping("category/link/{encodedCategoryId}")
-    public ResponseEntity<?> CreateWorkspaceFromURL(@RequestParam(defaultValue = "0") int page,
-                                                    @PathVariable String encodedCategoryId,
-                                                    @AuthenticationPrincipal CustomUserDetails userDetails) {
+    public ResponseEntity<?> getCategoryFromURL(@RequestParam(defaultValue = "0") int page,
+                                                @PathVariable String encodedCategoryId,
+                                                @AuthenticationPrincipal CustomUserDetails userDetails) {
         Pageable pageable = PageRequest.of(page, PAGE_SIZE, Sort.by("createdAt").descending());
         GetCategoryFromLinkResponseDto responseDto = getCategoryFromLinkService.getCategory(encodedCategoryId, pageable);
         return ResponseEntity.ok(ApiUtils.success(responseDto));
@@ -66,6 +65,7 @@ public class ShareController {
 
 
     @PostMapping("workspace/link/{encodedWorkSpaceId}")
+
     public ResponseEntity<?> CreateWorkspaceFromURL(
             @PathVariable String encodedWorkSpaceId,
             @AuthenticationPrincipal CustomUserDetails userDetails) {
