@@ -82,7 +82,7 @@
 
 ## API 모아보기 
 
-[API 명세서](https://www.notion.so/taeho1234/API-eec9b74e1dff454d9a51789550cb1b85?pvs=4)
+[API 명세서](https://www.notion.so/API-9033e8ee46374997b377a05f431243ac)
 
 
 ## 파일 구조
