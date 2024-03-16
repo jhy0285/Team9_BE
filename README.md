@@ -53,12 +53,13 @@
 | <img src="https://github.com/Train0303.png" width="100"> | <img src="https://github.com/JS970.png" width="100"> | <img src="https://github.com/jhy0285.png" width="100"> | <img src="https://github.com/ikyeong.png" width="100"> |
 
 ## 배포 링크
+###현재 카카오 크램폴린 기간이 만료되어서 재배포할 예정입니다.
 -  [배포 사이트](https://kc709aacd7d14a.user-app.krampoline.com)
 
 ## 테스트 가이드 
 
 테스트를 하실떄 아래 테스트 시나리오를 참고해주시면 감사하겠습니다.<br><br>
-[테스트 시나리오](https://www.notion.so/04a226ff46b6469186e05694ed916726)
+[테스트 시나리오](https://www.notion.so/92e688363b2d4ff3891fb808da2be079)
 
 
 ## 아키텍쳐
