@@ -43,6 +43,8 @@
 
 **설문조사 결과에 따상
 
+## 소개 영상
+
 [![카테캠 1기 3단계 소개영상](http://img.youtube.com/vi/10HmaLOv83A/0.jpg)](https://youtu.be/10HmaLOv83A)
 
 ## 팀원 소개
