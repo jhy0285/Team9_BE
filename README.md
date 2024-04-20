@@ -50,8 +50,8 @@
 [![카테캠 1기 3단계 소개영상](http://img.youtube.com/vi/LF5Do6c3k60/0.jpg)](https://youtu.be/LF5Do6c3k60)
 
 ## 팀원 소개
-
-|조장|타임 키퍼 |기획 리더| 리액셔너|
+공통업무: 엔티티별 Controller - Service - Repo - DB연결 구현
+|CI/CD, 소셜로그인구현 |엔티티별 연결, 트러블 슈팅|데이터 암호화, AWS 배포|동적쿼리|
 |:-----:|:------:|:--------:|:------:|
 | [김태호](https://github.com/Train0303) | [손재성](https://github.com/JS970)|[조영진](https://github.com/jhy0285)|[김이경](https://github.com/ikyeong) |
 | <img src="https://github.com/Train0303.png" width="100"> | <img src="https://github.com/JS970.png" width="100"> | <img src="https://github.com/jhy0285.png" width="100"> | <img src="https://github.com/ikyeong.png" width="100"> |
