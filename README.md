@@ -51,7 +51,7 @@
 
 ## 팀원 소개
 공통업무:  Controller - Service - Repo - DB 에 따른 엔티티별 CRUD 구현
-|CI/CD, 소셜로그인구현 |엔티티별 연결, 트러블 슈팅|데이터 암호화, AWS 배포|동적쿼리|
+|CI/CD, 소셜로그인구현 |엔티티별 연결, 트러블 슈팅|데이터 암호화, AWS 배포, 보안전반|동적쿼리|
 |:-----:|:------:|:--------:|:------:|
 | [김태호](https://github.com/Train0303) | [손재성](https://github.com/JS970)|[조영진](https://github.com/jhy0285)|[김이경](https://github.com/ikyeong) |
 | <img src="https://github.com/Train0303.png" width="100"> | <img src="https://github.com/JS970.png" width="100"> | <img src="https://github.com/jhy0285.png" width="100"> | <img src="https://github.com/ikyeong.png" width="100"> |
