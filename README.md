@@ -204,8 +204,8 @@
 
 ## 테스트
 ![테스트커버리지](https://github.com/jhy0285/kakao-tech-campus-step3-backend-team9/assets/89145559/1d951e58-f072-4861-8d8d-eed9785ee2c0)
-## 코딩 
-컨벤션 
+
+## 코딩 컨벤션 
 [캠퍼스 핵데이 Java 코딩 컨벤션](https://github.com/naver/hackday-conventions-java)
 
 editorconfig 설정
