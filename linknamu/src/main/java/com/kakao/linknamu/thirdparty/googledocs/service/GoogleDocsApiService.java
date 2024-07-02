@@ -93,6 +93,7 @@ public class GoogleDocsApiService {
 	}
 
 	// 초기 구글문서 연동 생성 시 데이터를 가져오는 것을 다른 쓰레드에 위임
+	//구글 독스 토픽에 대한 카프라 프로듀스 코드
 	private void googleDocsRequestToKafka(GooglePage googlePage) {
 		try {
 			GoogleDocsKafkaRequestDto googleDocsKafkaRequestDto = GoogleDocsKafkaRequestDto.builder()

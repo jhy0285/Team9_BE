@@ -40,6 +40,6 @@ public class BlackListToken {
 
 	@Override
 	public int hashCode() {
-		return Objects.hash(getAccessToken());
+		return Objects.hash(getAccessTboken());
 	}
 }
